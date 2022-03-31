@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Detalhes</title>
+        <link rel="stylesheet" href="{% static 'css/styles_details.css' %}">
+</head>
+<body>
+    <header>
+     <a href="{% url 'list' %}"> Voltar </a>
+        <p id="title">CLIENTE</p>
+     </header>
+    <div>
+        <p id="title">
+            Nome : {{object.name}}
+        </p>
+        <p id="title"> 
+            Email : {{object.email}}
+        </p>
+    </div>
+</body>
+</html>

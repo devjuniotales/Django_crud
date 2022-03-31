@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Apagar Cliente</title>
+    {{page_title}}
+</head>
+<body>
+    <div>
+        <h1>
+            Deseja apagar cliente ? {{object.name}}
+        </h1>
+    </div>
+
+    <form action="." method="post">
+        {% csrf_token %}
+        <input type="submit" value="Sim">
+        <a href="{% url 'list' %}"> Não </a>
+    </form>
+</html>

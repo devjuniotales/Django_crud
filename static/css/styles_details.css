@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    margin: auto;
+  }
+  header {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    width: 50%;
+
+    background-color: tomato;
+  
+  
+}
+body {
+    display: flex;
+
+    flex-direction: column;
+}
+#title{
+    font-size: 25px;
+    font-weight: 500;
+}
+a {
+    background-color: rgb(2, 95, 44);
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+
+
+    text-decoration: none;
+
+}

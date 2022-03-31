@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> Cadastro de Cliente </title>
+    <link rel="stylesheet" href="{% static 'css/styles_form.css' %}">
+</head>
+<body>
+    <header>
+        <h1> Cadastro/Alterar </h1>
+        {{template_title}}
+    </header>
+
+    <div id ='container'>
+        <form method="post" action="." >
+            {% csrf_token %}
+            {{ form.as_p}}
+            <input id="input" type='submit' value="Salvar">
+            <a href="{% url 'list' %}">Cancelar </a>
+        </form>
+       
+    </div>
+    
+</body>
+</html>
