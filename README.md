@@ -1,0 +1,6 @@
+# CRUD
+
+
+# 🚀 Tecnologias 
+-Django
+-PostgreSQl
